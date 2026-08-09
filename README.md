@@ -1,8 +1,19 @@
+<div align="center">
+
 # trustlayer
 
 **Decide when a language model's output can be acted on.**
 
-A small, dependency-free Python library for the layer that sits between an extraction and a system of record. Confidence scoring, independent verification, per-field risk policy, and threshold calibration.
+![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)
+![Tests](https://img.shields.io/badge/tests-9%20passing-2F7D4F)
+![Dependencies](https://img.shields.io/badge/dependencies-none-6E7078)
+![License](https://img.shields.io/badge/license-MIT-6E7078)
+
+</div>
+
+---
+
+A small Python library for the layer between an extraction and a system of record. Confidence scoring, independent verification, per-field risk policy, and threshold calibration.
 
 ```bash
 pip install -e .
@@ -101,4 +112,9 @@ The suite includes a monotonicity property: raising the threshold can never redu
 
 ## License
 
-MIT. Built by [Neel Barmecha](https://neelbarmecha.netlify.app/). See also [plancheck](https://github.com/neelbarm/plancheck), which applies this idea end to end to permit intake.
+## Related
+
+- **[mcp-trustlayer](https://github.com/neelbarm/mcp-trustlayer)** — the same decision exposed as an MCP server, so an agent can ask before it acts
+- **[plancheck](https://github.com/neelbarm/plancheck)** — the idea applied end to end to permit intake, with a [live demo](https://plancheck-neel.netlify.app/)
+
+MIT. Built by [Neel Barmecha](https://neelbarmecha.netlify.app/).
