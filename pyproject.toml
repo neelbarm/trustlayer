@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trustlayer"
+version = "0.1.0"
+description = "Decide when a language model's output can be acted on. Confidence, verification, and human escalation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Neel Barmecha" }]
+keywords = ["llm", "evaluation", "agents", "guardrails", "human-in-the-loop"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["trustlayer*"]
