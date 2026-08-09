@@ -110,8 +110,6 @@ python -m pytest tests -q
 
 The suite includes a monotonicity property: raising the threshold can never reduce review load. That invariant is easy to break when refactoring the policy logic.
 
-## License
-
 ## Related
 
 - **[mcp-trustlayer](https://github.com/neelbarm/mcp-trustlayer)** — the same decision exposed as an MCP server, so an agent can ask before it acts
